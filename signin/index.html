@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sign in — Northward Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/styles/main.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <header class="section__header">
+      <h1 class="h1">Sign in</h1>
+      <p class="muted">Welcome back.</p>
+    </header>
+
+    <form class="form card" data-signin-form>
+      <label>
+        <span>Email</span>
+        <input type="email" name="email" placeholder="email@example.com" required />
+      </label>
+      <label>
+        <span>Password</span>
+        <input type="password" name="password" placeholder="Your password" minlength="6" required />
+      </label>
+      <button class="btn btn--primary" type="submit">Sign in</button>
+      <small class="muted">No account yet? <a href="../register/">Create one</a>.</small>
+    </form>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../assets/scripts/components/header.js" defer></script>
+  <script src="../assets/scripts/components/accordion.js" defer></script>
+  <script src="../assets/scripts/components/carousel.js" defer></script>
+  <script src="../assets/scripts/components/mini-cart.js" defer></script>
+  <script src="../assets/scripts/main.js" defer></script>
+  <script src="../assets/scripts/account.js" defer></script>
+</body>
+</html>

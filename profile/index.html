@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Profile — Northward Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/styles/main.css" />
+</head>
+<body data-page="profile">
+  <div id="site-header"></div>
+
+  <main class="container">
+    <header class="section__header">
+      <h1 class="h1">Your Profile</h1>
+      <p class="muted">Manage your details below.</p>
+    </header>
+
+    <div class="card">
+      <p><strong>Name:</strong> <span id="profile-name">—</span></p>
+      <p><strong>Email:</strong> <span id="profile-email">—</span></p>
+      <p><strong>Member since:</strong> <span id="profile-date">—</span></p>
+      <div class="spacer"></div>
+      <a class="btn" href="../collections/">Continue shopping</a>
+      <span style="display:inline-block; width:8px"></span>
+      <a class="btn btn--ghost" href="#" data-logout>Logout</a>
+    </div>
+
+    <div class="spacer"></div>
+
+    <form class="form card" data-profile-form>
+      <h3 class="h3">Settings</h3>
+      <label>
+        <span>Name</span>
+        <input type="text" name="name" placeholder="Your name" required />
+      </label>
+      <label>
+        <span>Email</span>
+        <input type="email" name="email" placeholder="email@example.com" required />
+      </label>
+      <label class="select">
+        <span>Theme</span>
+        <select name="theme">
+          <option value="system">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+      <label>
+        <input type="checkbox" name="newsletter" /> Subscribe to newsletter
+      </label>
+      <div style="display:flex; gap:8px; flex-wrap:wrap">
+        <button class="btn btn--primary" type="submit">Save changes</button>
+        <a class="btn btn--ghost" href="#" data-delete-account>Delete account</a>
+      </div>
+    </form>
+
+    <div class="spacer"></div>
+
+    <section class="card">
+      <h3 class="h3" style="margin-top:0">Your Cart</h3>
+      <p id="cart-empty" class="muted">Your cart is empty.</p>
+      <div id="cart-list"></div>
+      <div class="spacer"></div>
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap">
+        <strong>Total: <span id="cart-total">$0.00</span></strong>
+        <div style="display:flex; gap:8px; flex-wrap:wrap">
+          <a href="#" class="btn" id="cart-clear">Clear</a>
+          <a href="#" class="btn btn--primary" id="cart-checkout">Checkout</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../assets/scripts/components/header.js" defer></script>
+  <script src="../assets/scripts/components/accordion.js" defer></script>
+  <script src="../assets/scripts/components/carousel.js" defer></script>
+  <script src="../assets/scripts/components/mini-cart.js" defer></script>
+  <script src="../assets/scripts/main.js" defer></script>
+  <script src="../assets/scripts/account.js" defer></script>
+</body>
+</html>

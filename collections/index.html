@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Collections — Northward Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/styles/main.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span aria-hidden="true">/</span>
+      <span>Collections</span>
+    </nav>
+
+    <header class="section__header">
+      <h1 class="h1">All Collections</h1>
+    </header>
+
+    <div class="filters">
+      <button class="chip" aria-pressed="false">New</button>
+      <button class="chip" aria-pressed="false">Best Sellers</button>
+      <button class="chip" aria-pressed="false">Knitwear</button>
+      <button class="chip" aria-pressed="false">Outerwear</button>
+      <div class="filters__spacer"></div>
+      <form class="search-inline" onsubmit="return false" style="display:flex; gap:8px; align-items:center; margin-right:8px">
+        <label class="sr-only" for="collection-q">Search</label>
+        <input id="collection-q" type="search" placeholder="Search products" aria-label="Search products" />
+      </form>
+      <label class="select">
+        <span class="sr-only">Sort by</span>
+        <select aria-label="Sort by" data-sort>
+          <option value="featured">Sort: Featured</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+        </select>
+      </label>
+    </div>
+  <p class="muted" id="results-summary" style="margin:6px 0 12px"></p>
+
+    <div class="product-grid" data-grid>
+      <a class="product-card" data-title="Soft Wool Beanie" data-price="45" href="../product/"><div class="product-card__media"><img src="https://picsum.photos/seed/c1/900/1200" alt="Soft Wool Beanie" /></div><div class="product-card__info"><h3 class="product-card__title">Soft Wool Beanie</h3><p class="product-card__price">$45</p></div></a>
+      <a class="product-card" data-title="Alpaca Cardigan" data-price="210" href="../product/"><div class="product-card__media"><img src="https://picsum.photos/seed/c2/900/1200" alt="Alpaca Cardigan" /></div><div class="product-card__info"><h3 class="product-card__title">Alpaca Cardigan</h3><p class="product-card__price">$210</p></div></a>
+      <a class="product-card" data-title="Structured Blazer" data-price="320" href="../product/"><div class="product-card__media"><img src="https://picsum.photos/seed/c3/900/1200" alt="Structured Blazer" /></div><div class="product-card__info"><h3 class="product-card__title">Structured Blazer</h3><p class="product-card__price">$320</p></div></a>
+      <a class="product-card" data-title="Fine Knit Polo" data-price="130" href="../product/"><div class="product-card__media"><img src="https://picsum.photos/seed/c4/900/1200" alt="Fine Knit Polo" /></div><div class="product-card__info"><h3 class="product-card__title">Fine Knit Polo</h3><p class="product-card__price">$130</p></div></a>
+      <a class="product-card" data-title="Quilted Liner Jacket" data-price="240" href="../product/"><div class="product-card__media"><img src="https://picsum.photos/seed/c5/900/1200" alt="Quilted Liner Jacket" /></div><div class="product-card__info"><h3 class="product-card__title">Quilted Liner Jacket</h3><p class="product-card__price">$240</p></div></a>
+      <a class="product-card" data-title="Heavyweight Hoodie" data-price="95" href="../product/"><div class="product-card__media"><img src="https://picsum.photos/seed/c6/900/1200" alt="Heavyweight Hoodie" /></div><div class="product-card__info"><h3 class="product-card__title">Heavyweight Hoodie</h3><p class="product-card__price">$95</p></div></a>
+      <a class="product-card" data-title="Everyday Tee" data-price="40" href="../product/"><div class="product-card__media"><img src="https://picsum.photos/seed/c7/900/1200" alt="Everyday Tee" /></div><div class="product-card__info"><h3 class="product-card__title">Everyday Tee</h3><p class="product-card__price">$40</p></div></a>
+      <a class="product-card" data-title="Textured Vest" data-price="110" href="../product/"><div class="product-card__media"><img src="https://picsum.photos/seed/c8/900/1200" alt="Textured Vest" /></div><div class="product-card__info"><h3 class="product-card__title">Textured Vest</h3><p class="product-card__price">$110</p></div></a>
+      <a class="product-card" data-title="Cropped Jacket" data-price="260" href="../product/"><div class="product-card__media"><img src="https://picsum.photos/seed/c9/900/1200" alt="Cropped Jacket" /></div><div class="product-card__info"><h3 class="product-card__title">Cropped Jacket</h3><p class="product-card__price">$260</p></div></a>
+      <a class="product-card" data-title="Wide-Leg Trouser" data-price="150" href="../product/"><div class="product-card__media"><img src="https://picsum.photos/seed/c10/900/1200" alt="Wide-Leg Trouser" /></div><div class="product-card__info"><h3 class="product-card__title">Wide-Leg Trouser</h3><p class="product-card__price">$150</p></div></a>
+      <a class="product-card" data-title="Field Overshirt" data-price="175" href="../product/"><div class="product-card__media"><img src="https://picsum.photos/seed/c11/900/1200" alt="Field Overshirt" /></div><div class="product-card__info"><h3 class="product-card__title">Field Overshirt</h3><p class="product-card__price">$175</p></div></a>
+      <a class="product-card" data-title="Ribbed Turtleneck" data-price="140" href="../product/"><div class="product-card__media"><img src="https://picsum.photos/seed/c12/900/1200" alt="Ribbed Turtleneck" /></div><div class="product-card__info"><h3 class="product-card__title">Ribbed Turtleneck</h3><p class="product-card__price">$140</p></div></a>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../assets/scripts/components/header.js" defer></script>
+  <script src="../assets/scripts/components/accordion.js" defer></script>
+  <script src="../assets/scripts/components/carousel.js" defer></script>
+  <script src="../assets/scripts/components/mini-cart.js" defer></script>
+  <script src="../assets/scripts/main.js" defer></script>
+</body>
+</html>

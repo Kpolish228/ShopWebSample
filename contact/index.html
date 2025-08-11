@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Northward Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/styles/main.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <header class="section__header">
+      <h1 class="h1">Contact</h1>
+      <p class="muted">We’re here to help Monday–Friday, 9am–5pm.</p>
+    </header>
+
+    <section class="split">
+      <form class="form card" onsubmit="return false" aria-label="Contact form">
+        <label>
+          <span>Name</span>
+          <input type="text" placeholder="Your name" disabled />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" placeholder="email@example.com" disabled />
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea rows="5" placeholder="How can we help?" disabled></textarea>
+        </label>
+        <button class="btn btn--primary" type="submit" disabled>Send</button>
+      </form>
+
+      <div class="card">
+        <img class="rounded" src="https://picsum.photos/seed/map1/1200/800" alt="Map placeholder showing studio area" />
+        <div class="spacer"></div>
+        <h3 class="h3">Studio</h3>
+        <p>By appointment only.</p>
+        <p class="muted">123 North Street, Suite 5, Anywhere</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../assets/scripts/components/header.js" defer></script>
+  <script src="../assets/scripts/components/accordion.js" defer></script>
+  <script src="../assets/scripts/components/carousel.js" defer></script>
+  <script src="../assets/scripts/main.js" defer></script>
+</body>
+</html>

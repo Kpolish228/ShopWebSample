@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Merino Crewneck — Northward Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/styles/main.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="../collections/">Collections</a>
+      <span aria-hidden="true">/</span>
+      <span>Merino Crewneck</span>
+    </nav>
+
+    <section class="pdp">
+      <div class="pdp__media">
+        <div class="carousel" data-carousel>
+          <div class="carousel__track">
+            <div class="carousel__slide is-active"><img src="https://picsum.photos/seed/pdp1/1200/1500" alt="Merino crewneck front view" /></div>
+            <div class="carousel__slide"><img src="https://picsum.photos/seed/pdp2/1200/1500" alt="Merino crewneck detail texture" /></div>
+            <div class="carousel__slide"><img src="https://picsum.photos/seed/pdp3/1200/1500" alt="Merino crewneck on-model" /></div>
+          </div>
+          <button class="carousel__btn prev" aria-label="Previous image" data-prev>&larr;</button>
+          <button class="carousel__btn next" aria-label="Next image" data-next>&rarr;</button>
+        </div>
+        <div class="thumbs">
+          <button class="thumb is-active" data-goto="0"><img src="https://picsum.photos/seed/pdp1/200/250" alt="Thumbnail 1" /></button>
+          <button class="thumb" data-goto="1"><img src="https://picsum.photos/seed/pdp2/200/250" alt="Thumbnail 2" /></button>
+          <button class="thumb" data-goto="2"><img src="https://picsum.photos/seed/pdp3/200/250" alt="Thumbnail 3" /></button>
+        </div>
+      </div>
+
+      <div class="pdp__info">
+        <h1 class="h1">Merino Crewneck</h1>
+        <p class="price">$180</p>
+        <p class="muted">A refined essential crafted from fine merino yarns for softness and breathability.</p>
+
+        <form class="form pdp-form" onsubmit="return false">
+          <label class="select">
+            <span>Color</span>
+            <select disabled>
+              <option>Oat</option>
+              <option>Charcoal</option>
+              <option>Olive</option>
+            </select>
+          </label>
+
+          <label class="select">
+            <span>Size</span>
+            <select disabled>
+              <option>XS</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+          </label>
+
+          <div class="qty">
+            <button type="button" aria-label="Decrease quantity" disabled>-</button>
+            <input type="number" inputmode="numeric" value="1" min="1" aria-label="Quantity" disabled />
+            <button type="button" aria-label="Increase quantity" disabled>+</button>
+          </div>
+
+          <button class="btn btn--primary btn--block" type="submit" disabled>Add to cart</button>
+          <button class="btn btn--ghost btn--block" type="button" disabled>Buy it now</button>
+        </form>
+
+        <div class="accordion" data-accordion>
+          <button class="accordion__trigger" aria-expanded="false" aria-controls="details">Details</button>
+          <div id="details" class="accordion__panel" hidden>
+            <ul class="list">
+              <li>100% merino wool</li>
+              <li>Mid-weight knit</li>
+              <li>Rib trim at cuffs and hem</li>
+              <li>True to size</li>
+            </ul>
+          </div>
+
+          <button class="accordion__trigger" aria-expanded="false" aria-controls="care">Materials & Care</button>
+          <div id="care" class="accordion__panel" hidden>
+            <p>Hand wash cold. Lay flat to dry. Store folded.</p>
+          </div>
+
+          <button class="accordion__trigger" aria-expanded="false" aria-controls="shipping">Shipping & Returns</button>
+          <div id="shipping" class="accordion__panel" hidden>
+            <p>Standard shipping and 30-day returns. This is a demonstration only.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <header class="section__header">
+        <h2 class="h2">You may also like</h2>
+      </header>
+      <div class="product-grid">
+        <a class="product-card" href="./"><div class="product-card__media"><img src="https://picsum.photos/seed/r1/900/1200" alt="Related product 1" /></div><div class="product-card__info"><h3 class="product-card__title">Textured Crew</h3><p class="product-card__price">$165</p></div></a>
+        <a class="product-card" href="./"><div class="product-card__media"><img src="https://picsum.photos/seed/r2/900/1200" alt="Related product 2" /></div><div class="product-card__info"><h3 class="product-card__title">Chunky Knit</h3><p class="product-card__price">$190</p></div></a>
+        <a class="product-card" href="./"><div class="product-card__media"><img src="https://picsum.photos/seed/r3/900/1200" alt="Related product 3" /></div><div class="product-card__info"><h3 class="product-card__title">Cashmere Crew</h3><p class="product-card__price">$240</p></div></a>
+        <a class="product-card" href="./"><div class="product-card__media"><img src="https://picsum.photos/seed/r4/900/1200" alt="Related product 4" /></div><div class="product-card__info"><h3 class="product-card__title">Ribbed Henley</h3><p class="product-card__price">$135</p></div></a>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="./assets/scripts/components/header.js" defer></script>
+  <script src="./assets/scripts/components/accordion.js" defer></script>
+  <script src="./assets/scripts/components/carousel.js" defer></script>
+  <script src="./assets/scripts/main.js" defer></script>
+</body>
+</html>
